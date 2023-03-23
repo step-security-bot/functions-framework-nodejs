@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /docs/esm
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /experimental/generate_cloud_events
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/conformance
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/data/esm_mjs
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/data/esm_nested
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/data/esm_type
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /test/data/with_main
+    schedule:
+      interval: daily
